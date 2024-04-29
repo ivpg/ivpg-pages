@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><!-- TemplateBeginEditable name="doctitle" -->
+<title>COLiER: Collaborative Editing of Raster Images</title>
+<link rel="shortcut icon" type="image/x-icon" href="./Logo.svg">
+<!-- TemplateEndEditable -->
+
+<!--<link rel="SHORTCUT ICON" href="http://www.mpii.mpg.de/favicon.ico"/>-->
+<link rel="stylesheet" type="text/css" media="screen" href="./inc/css/my.css"/>
+<!--<link rel="stylesheet" type="text/css" media="print" href="http://www.mpii.mpg.de/c/print.css"/>-->
+<!-- TemplateBeginEditable name="head" -->
+<style type="text/css" media="screen">
+a#n4-departments, a:link#n1-departments, a:visited#n1-departments {color: #fff;}
+a#n2-departments, a:link#n2-departments, a:visited#n2-departments {background: rgb(80%,85%,90%);}
+a#d4-homepage, a:link#d4-homepage, a:visited#d4-homepage {background: rgb(80%,85%,90%);}
+a#d4-people, a:link#d4-people, a:visited#d4-people {background: rgb(80%,85%,90%);}
+li.hps {margin-top:10px;}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover{color: #B1073A;}
+a { font-weight: bold; }
+
+.logos { margin: 0 auto; }
+.logos a { display: block; float: left; clear: none; margin-left: auto; margin-right: auto; position: relative;left: 9%}
+.logos a img { height: 65px;  position: relative;}
+
+.clr {
+	clear: both;
+    margin-top: -1px;
+    position: relative;
+    height: 0;
+    border: none;
+    overflow: hidden;
+    visibility: hidden;
+	margin-left: auto; 
+	margin-right: auto;
+    display: block;
+	text-align: center;
+}
+
+</style><!-- TemplateEndEditable -->
+
+</head>
+
+<body>
+
+
+<center>
+
+<div id="head2o2">
+		<img id="mpiilogo" src="./images/main/hpi_logo.png" alt="HPI" usemap="#Map" width="175" height="100"/>
+		<map name="Map" id="Map">
+			<area shape="rect" coords="97,14,296,70" href="https://hpi.de/" alt="HPI logo" />
+		</map>
+	</div>
+	
+	<div id="headerspacer"></div>
+<div id="col2o2">
+	
+	
+	<div id="col2o2content">
+
+	
+
+
+<h1 id="eg2021">
+	COLiER: Collaborative Editing of Raster Images,
+	<a href="https://cyberworlds2021.sciencesconf.org/">CW 2021</a>
+</h1>
+	<center>
+<h3>
+
+	<br/>
+	<b> <font size="+2">COLiER: Collaborative Editing of Raster Images</font> </b>
+	<br/>
+	<br/>
+	<a href="#">Ulrike Bath</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://hpi.de/doellner/people/current/sumit-shekhar.html">Sumit Shekhar</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://hpi.de/doellner/index.html">Jürgen Döllner</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://hpi.de/doellner/people/current/trapp.html">Matthias Trapp</a>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+	
+	<br/>
+	<br/>
+	 Hasso Plattner Institute, Faculty of Digital Engineering, University of Potsdam&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+	
+	<br/>
+</h3>
+
+
+	</center>
+<h1>Abstract</h1>
+<p style = "padding:10.0px 20.0px 10.0px 20.0px;text-align:justify">
+Various web-based image-editing tools and web-based collaborative tools exist in isolation. Research focusing to bridge the gap between these two domains is sparse. We respond to the above and develop prototype groupware for real-time collaborative editing of raster images in a web browser. To better understand the requirements, we conduct a preliminary user study and establish communication and synchronization as key elements. 
+The existing groupware for text documents, presentations, and vector graphics handles the above through well-established techniques. However, those cannot be extended as it is for raster graphics manipulation. 
+To this end, we develop a document model that is maintained by a server and is delivered and synchronized to multiple clients. Our prototypical implementation is based on a scalable client-server architecture: using WebGL for interactive browser-based rendering and WebSocket connections to maintain synchronization. We evaluate our work qualitatively through a post-deployment user study for three different scenarios.
+</p>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/pjhXPMpP0AA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!--
+<video width="100%" controls> <source src="./other/shekhar-vmv2019-final.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>  </video>
+-->
+
+<h1 >
+      Results
+</h1>
+<br>
+<br>
+<p style = "text-align:center">
+Some application results using our framework. Please hover over the images to see the respective output.
+</p>
+
+	
+<div class="logos" >
+
+<div class="row">
+  <div class="column_33">
+    <img loading="lazy" src="./results/tasks/task_1_input.png" 
+    onmouseover="this.src='./results/tasks/task_1_output.png';" 
+    onmouseout="this.src='./results/tasks/task_1_input.png';" 
+    alt="Coloring Book" style="width:85%">
+  </div>
+  <div class="column_33">
+    <img loading="lazy" src="./results/tasks/task_2_input.png" 
+    onmouseover="this.src='./results/tasks/task_2_output.png';" 
+    onmouseout="this.src='./results/tasks/task_2_input.png';" 
+    alt="Puzzle Solving" style="width:85%"> 
+  </div>
+  <div class="column_33">
+    <img loading="lazy" src="./results/tasks/task_3_input.png" 
+    onmouseover="this.src='./results/tasks/task_3_output.png';" 
+    onmouseout="this.src='./results/tasks/task_3_input.png';" 
+    alt="Collage Creation" style="width:85%"> 
+  </div>
+</div>
+
+<div class="row">
+  <div class="column_33" >
+      Coloring Book
+  </div>
+  <div class="column_33">
+      Puzzle Solving
+  </div>
+  <div class="column_33">
+     Collage Creation
+  </div>
+</div>
+
+</div> 
+
+<br>
+<br>
+
+
+<br/>
+
+
+<h1>Citation</h1>
+<p style = "padding:10.0px 20.0px 10.0px 20.0px;">
+	<i>Ulrike Bath, Sumit Shekhar, Jürgen Döllner, Matthias Trapp</i><br/>
+	<b>COLiER: Collaborative Editing of Raster Images</b><br/>
+	<i>Cyberworlds, 2021</i><br/>	
+	<div style = "padding: 0.0px 0.0px 0.0px 20.0px;">
+<pre><code>
+@inproceedings{OwnUSDT2021,
+	author       = {Ulrike Bath and Sumit Shekhar and D{\"o}llner, J{\"u}rgen and Matthias Trapp},
+	title        = {COLiER: Collaborative Editing of Raster Images},
+	booktitle    = {International Conference on CyberWorlds (CW2021)},
+	language     = {English},	
+	year         = 2021,
+	month        = Sep,
+	location     = {Caen, France},
+	publisher    = {IEEE Computer Society},
+        address      = {Los Alamitos, CA, USA},
+	numpages     = {8},
+	note         = {(to appear)},
+        affiliation  = {Hasso-Plattner-Institut, University of Potsdam},
+}
+
+
+</code></pre></div>
+</p>
+<p style = "padding:0.0px 20.0px 10.0px 20.0px;">
+	<span style="font-size: 7pt;">&copy; 2021 The Authors. This is the author's version of the work. It is posted here for your personal use. Not for redistribution. </span>
+</p>
+
+
+<h1>Downloads</h1>
+<table>
+	<tr valign ="top">
+		<td>
+
+			<table class="downloads" style="width: 400px;padding: 20px 20px 0px 15px">
+				<tr style="">
+					<td><div style="width: 23px; height: 24px; background-image:url(./images/main/PDF.png);"/></td>
+					<td><a href="./other/colier_cw2021_main.pdf">Paper (11 MB)</a>
+					</a></td>
+				</tr>						
+			</table>
+		</td>
+		<td style="width:600px;">
+
+		</td>
+	</tr>
+</table>
+<br/>
+
+
+<h1>Acknowledgements</h1>
+<p style = "padding:10.0px 20.0px 10.0px 20.0px;">
+This work was partially funded by the German Federal Ministry of Education and Research (BMBF) (through grants 01IS15041 – “mdViProject” and 01IS19006 – “KI-Labor ITSE”) and the Research School on “Service-Oriented Systems Engineering” of the Hasso Plattner Institute.
+</p>
+
+<!--
+<div class="logos" class="clr" >
+	<span  ></span>
+    <a href="https://hpi.de/"><img src="./images/main/logos/hpi_logo.png" alt="Hasso-Plattner-Institut" /></a>
+	<a href="https://www.digitalmasterpieces.com/"><img src="./images/main/logos/dm_logo.png" alt="Digital Masterpieces" /></a>
+	<a href="https://www.bmbf.de/"><img src="./images/main/logos/bmbf_logo.png" alt="BMBF: Bundesministerium für Bildung und Forschung" /></a>
+	<a href="https://www.uni-potsdam.de/"><img src="./images/main/logos/uni_potsdam_logo.png" alt="Universität Potsdam" /></a>
+	<span class="clr"></span>
+</div> -->
+
+<div class="logos" >
+
+<div class="row">
+  <div class="column_33">
+    <a href="https://hpi.de/"><img src="./images/main/logos/hpi_logo.png" alt="Hasso-Plattner-Institut" style="max-width:85%"></a>
+  </div>
+  <div class="column_33">
+    <a href="https://www.bmbf.de/"><img src="./images/main/logos/bmbf_logo.png" alt="BMBF: Bundesministerium für Bildung und Forschung" style="max-width:85%"></a>
+  </div>
+  <div class="column_33">
+    <a href="https://www.uni-potsdam.de/"><img src="./images/main/logos/uni_potsdam_logo.png" alt="Universität Potsdam" style="max-width:85%"></a>
+  </div>
+</div>
+
+</div> 
+
+<br />
+<br />
+	
+<div id="footer">Copyright 2021 by <a href="https://hpi.de/" title="Home Page of the Hasso-Plattner-Institut">Hasso-Plattner-Institut</a> | <a href="https://hpi.de/impressum.html" target="_blank">Imprint/Impressum</a> | <a href="https://hpi.de/datenschutz.html" target="_blank">Data Protection</a> <br/>
+</div>
+	
+	
+   </div>
+</div>
+
+</center>
+
+</body>
+</html>

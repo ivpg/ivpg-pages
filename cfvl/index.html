@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><!-- TemplateBeginEditable name="doctitle" -->
+<title>Consistent Filtering of Videos and Dense Light-Fields Without Optic-Flow</title>
+
+<!-- TemplateEndEditable -->
+
+<!--<link rel="SHORTCUT ICON" href="http://www.mpii.mpg.de/favicon.ico"/>-->
+<link rel="stylesheet" type="text/css" media="screen" href="./inc/css/my.css"/>
+<!--<link rel="stylesheet" type="text/css" media="print" href="http://www.mpii.mpg.de/c/print.css"/>-->
+<!-- TemplateBeginEditable name="head" -->
+<style type="text/css" media="screen">
+a#n4-departments, a:link#n1-departments, a:visited#n1-departments {color: #fff;}
+a#n2-departments, a:link#n2-departments, a:visited#n2-departments {background: rgb(80%,85%,90%);}
+a#d4-homepage, a:link#d4-homepage, a:visited#d4-homepage {background: rgb(80%,85%,90%);}
+a#d4-people, a:link#d4-people, a:visited#d4-people {background: rgb(80%,85%,90%);}
+li.hps {margin-top:10px;}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover{color: #B1073A;}
+a { font-weight: bold; }
+
+.logos { margin: 0 auto; }
+.logos a { display: block; float: left; clear: none; margin-left: auto; margin-right: auto; position: relative;left: 9%}
+.logos a img { height: 65px;  position: relative;}
+
+.clr {
+	clear: both;
+    margin-top: -1px;
+    position: relative;
+    height: 0;
+    border: none;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+}
+
+</style><!-- TemplateEndEditable -->
+
+</head>
+
+<body>
+
+
+<center>
+
+<div id="head2o2">
+		<img id="mpiilogo" src="./images/main/hpi_logo.png" alt="HPI" usemap="#Map" width="175" height="100"/>
+		<map name="Map" id="Map">
+			<area shape="rect" coords="97,14,296,70" href="https://hpi.de/" alt="HPI logo" />
+		</map>
+	</div>
+	
+	<div id="headerspacer"></div>
+<div id="col2o2">
+	
+	
+	<div id="col2o2content">
+
+	
+
+
+<h1 id="vmv2019">
+	Consistent Filtering of Videos and Dense Light-Fields Without Optic-Flow,
+	<a href="https://www.vmv2019.uni-rostock.de/">VMV 2019</a>
+</h1>
+	<center>
+<h3>
+
+	<br/>
+	<b> <font size="+2">Consistent Filtering of Videos and Dense Light-Fields Without Optic-Flow</font> </b>
+	<br/>
+	<br/>
+	<a href="https://hpi.de/doellner/people/current/sumit-shekhar.html">Sumit Shekhar</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://asemmo.github.io/">Amir Semmo</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://hpi.de/doellner/people/current/trapp.html">Matthias Trapp</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://people.mpi-inf.mpg.de/~otursun/">Okan Tarhan Tursun</a><sup>3,4</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<br/>	
+	<a href="https://hpi.de/doellner/people/current/pasewaldt.html">Sebastian Pasewaldt</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.mpi-inf.mpg.de/~karol/">Karol Myszkowski</a><sup>3</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://hpi.de/doellner/index.html">Jürgen Döllner</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<br/>
+	<br/>
+	<sup>1</sup> Hasso Plattner Institute, Faculty of Digital Engineering, University of Potsdam&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+	<sup>2</sup> Digital Materpieces GmbH&nbsp;&nbsp;&nbsp;&nbsp;	<br/>
+	<sup>3</sup> Max-Planck Institute for Informatics&nbsp;&nbsp;&nbsp;&nbsp;	<br/>
+	<sup>4</sup> Università della Svizzera italiana&nbsp;&nbsp;&nbsp;&nbsp;	<br/>
+	<br/>
+</h3>
+
+
+	</center>
+<h1>Abstract</h1>
+<p style = "padding:10.0px 20.0px 10.0px 20.0px;text-align:justify">
+A convenient post-production video processing approach is to apply image filters on a per-frame basis. This allows the flexibility of extending image filters—originally designed for still images—to videos. However, per-image filtering may lead to temporal
+inconsistencies perceived as unpleasant flickering artifacts, which is also the case for dense light-fields due to angular inconsistencies. In this work, we present a method for consistent filtering of videos and dense light-fields that addresses these problems.
+Our assumption is that inconsistencies—due to per-image filtering—are represented as noise across the image sequence. We thus perform denoising across the filtered image sequence and combine per-image filtered results with their denoised versions.
+At this, we use saliency based optimization weights to produce a consistent output while preserving the details simultaneously. To control the degree-of-consistency in the final output, we implemented our approach in an interactive real-time processing
+framework. Unlike state-of-the-art inconsistency removal techniques, our approach does not rely on optic-flow for enforcing coherence. Comparisons and a qualitative evaluation indicate that our method provides better results over state-of-the-art
+approaches for certain types of filters and applications.
+</p>
+<!-- <video width="100%" controls> <source src="./other/shekhar-vmv2019-final.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>  </video> -->
+<iframe width="100%" height="512" src="https://www.youtube.com/embed/2aWwqvlL7-A?si=TO4qEr5fRqBwxeqj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--
+<h1 >
+      Results
+</h1>
+<br>
+<br>
+
+	
+<ol>
+
+<li> 
+		<a href="#">Results comin soon...</a> 
+</li>
+
+</ol>
+
+<br>
+<br>
+
+
+<br/>-->
+
+
+<h1>Citation</h1>
+<p style = "padding:10.0px 20.0px 10.0px 20.0px;">
+	<i>Sumit Shekhar, Amir Semmo, Matthias Trapp, Okan Tarhan Tursun, Sebastian Pasewaldt, Karol Myszkowski, Jürgen Döllner</i><br/>
+	<b>Consistent Filtering of Videos and Dense Light-Fields Without Optic-Flow</b><br/>
+	<i>International Symposium on Vision, Modeling, and Visualization (VMV), 2019</i><br/>	
+	<div style = "padding: 0.0px 0.0px 0.0px 20.0px;">
+<pre><code>
+@inproceedings {SSTTPMD2019,
+booktitle = {Vision, Modeling and Visualization},
+editor = {Schulz, Hans-Jörg and Teschner, Matthias and Wimmer, Michael},
+title = {{Consistent Filtering of Videos and Dense Light-Fields Without Optic-Flow}},
+author = {Shekhar, Sumit and Semmo, Amir and Trapp, Matthias and Tursun, Okan Tarhan and Pasewaldt, Sebastian and Myszkowski, Karol and Döllner, Jürgen},
+year = {2019},
+publisher = {The Eurographics Association},
+ISBN = {978-3-03868-098-7},
+DOI = {10.2312/vmv.20191326}
+}
+</code></pre></div>
+</p>
+<p style = "padding:0.0px 20.0px 10.0px 20.0px;">
+	<span style="font-size: 7pt;">&copy; 2019 The Authors. This is the author's version of the work. It is posted here for your personal use. Not for redistribution. </span>
+</p>
+
+
+<h1>Downloads</h1>
+<table>
+	<tr valign ="top">
+		<td>
+
+			<table class="downloads" style="width: 400px;padding: 20px 20px 0px 15px">
+				<tr style="">
+					<td><div style="width: 23px; height: 24px; background-image:url(./images/main/PDF.png);"/></td>
+					<td><a href="./other/sshekhar-vmv2019-main.pdf">Paper (Optimized - Author's Copy) (20.5 MB)</a>
+					</a></td>
+				</tr>							
+				<tr style="">
+					<td><div style="width: 23px; height: 24px; background-image:url(./images/main/PDF.png);"/></td>
+					<td><a href="./other/sshekhar-vmv2019-supp.pdf">Supplementary material (16.3 MB)</a>
+					</a></td>
+				</tr>					
+			</table>
+		</td>
+		<td style="width:600px;">
+
+		</td>
+	</tr>
+</table>
+<br/>
+
+
+<h1>Acknowledgements</h1>
+<p style = "padding:10.0px 20.0px 10.0px 20.0px;">
+We thank Florian Wagner for his help with generating results. We thank Max Reimann for valuable discussion. We thank the reviewers for their insightful comments. The project was supported by the Fraunhofer and Max Planck cooperation program within the German pact for research and innovation (PFI), the Research School
+on “Service-Oriented Systems Engineering” of the Hasso Plattner Institute, and the Federal Ministry of Education and Research (BMBF), Germany (mdViPro, 01IS18092).</p>
+
+<div class="logos">
+	<span style="display:inline-block; "></span>
+    <a href="https://hpi.de/"><img src="./images/main/logos/hpi_logo.png" alt="Hasso-Plattner-Institut" /></a>
+	<a href="https://www.digitalmasterpieces.com/"><img src="./images/main/logos/dm_logo.png" alt="Digital Masterpieces" /></a>
+	<a href="http://www.mpi-inf.mpg.de/"><img src="./images/main/logos/mpi_logo.png" alt="MPI Informatik" /></a>	
+	<a href="https://www.inf.usi.ch/en"><img src="./images/main/logos/usi_logo.png" alt="The Faculty of Informatics of USI Università della Svizzera italiana" /></a>	
+	<a href="https://www.bmbf.de/"><img src="./images/main/logos/bmbf_logo.png" alt="BMBF: Bundesministerium für Bildung und Forschung" /></a>
+	<span class="clr"></span>
+</div>
+<br />
+<br />
+	
+<div id="footer">Copyright 2019 by <a href="https://hpi.de/" title="Home Page of the Hasso-Plattner-Institut">Hasso-Plattner-Institut</a> | <a href="https://hpi.de/impressum.html" target="_blank">Imprint/Impressum</a> | <a href="https://hpi.de/datenschutz.html" target="_blank">Data Protection</a> <br/>
+</div>
+	
+	
+   </div>
+</div>
+
+</center>
+
+</body>
+</html>
