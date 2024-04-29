@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><!-- TemplateBeginEditable name="doctitle" -->
+<title>Interactive Photo Editing on Smartphones via Intrinsic Decomposition</title>
+
+<!-- TemplateEndEditable -->
+
+<!--<link rel="SHORTCUT ICON" href="http://www.mpii.mpg.de/favicon.ico"/>-->
+<link rel="stylesheet" type="text/css" media="screen" href="./inc/css/my.css"/>
+<!--<link rel="stylesheet" type="text/css" media="print" href="http://www.mpii.mpg.de/c/print.css"/>-->
+<!-- TemplateBeginEditable name="head" -->
+<style type="text/css" media="screen">
+a#n4-departments, a:link#n1-departments, a:visited#n1-departments {color: #fff;}
+a#n2-departments, a:link#n2-departments, a:visited#n2-departments {background: rgb(80%,85%,90%);}
+a#d4-homepage, a:link#d4-homepage, a:visited#d4-homepage {background: rgb(80%,85%,90%);}
+a#d4-people, a:link#d4-people, a:visited#d4-people {background: rgb(80%,85%,90%);}
+li.hps {margin-top:10px;}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover{color: #B1073A;}
+a { font-weight: bold; }
+
+.logos { margin: 0 auto; }
+.logos a { display: block; float: left; clear: none; margin-left: auto; margin-right: auto; position: relative;left: 9%}
+.logos a img { height: 65px;  position: relative;}
+
+.clr {
+	clear: both;
+    margin-top: -1px;
+    position: relative;
+    height: 0;
+    border: none;
+    overflow: hidden;
+    visibility: hidden;
+	margin-left: auto; 
+	margin-right: auto;
+    display: block;
+	text-align: center;
+}
+
+</style><!-- TemplateEndEditable -->
+
+</head>
+
+<body>
+
+
+<center>
+
+<div id="head2o2">
+		<img id="mpiilogo" src="./images/main/hpi_logo.png" alt="HPI" usemap="#Map" width="175" height="100"/>
+		<map name="Map" id="Map">
+			<area shape="rect" coords="97,14,296,70" href="https://hpi.de/" alt="HPI logo" />
+		</map>
+	</div>
+	
+	<div id="headerspacer"></div>
+<div id="col2o2">
+	
+	
+	<div id="col2o2content">
+
+	
+
+
+<h1 id="eg2021">
+	Interactive Photo Editing on Smartphones via Intrinsic Decomposition,
+	<a href="https://conferences.eg.org/eg2021/">Eurographics 2021</a>
+</h1>
+	<center>
+<h3>
+
+	<br/>
+	<b> <font size="+2">Interactive Photo Editing on Smartphones via Intrinsic Decomposition</font> </b>
+	<br/>
+	<br/>
+	<a href="https://hpi.de/doellner/people/current/sumit-shekhar.html">Sumit Shekhar</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://www.researchgate.net/profile/Max-Reimann">Max Reimann</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="#">Maximilian Mayer</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="http://www.amirsemmo.de">Amir Semmo</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<br/>
+	<a href="https://www.researchgate.net/profile/Sebastian-Pasewaldt">Sebastian Pasewaldt</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://hpi.de/en/doellner/home.html">Jürgen Döllner</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://hpi.de/doellner/people/current/trapp.html">Matthias Trapp</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+	
+	<br/>
+	<br/>
+	<sup>1</sup> Hasso Plattner Institute, Faculty of Digital Engineering, University of Potsdam&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+	<sup>2</sup> Digital Materpieces GmbH&nbsp;&nbsp;&nbsp;&nbsp;	<br/>
+	<br/>
+</h3>
+
+
+	</center>
+<h1>Abstract</h1>
+<p style = "padding:10.0px 20.0px 10.0px 20.0px;text-align:justify">
+Intrinsic decomposition refers to the problem of estimating scene characteristics, such as albedo and shading, when one view or multiple views of a scene are provided. The inverse problem setting, where multiple unknowns are solved given a single known pixel-value, is highly under-constrained. When provided with correlating image and depth data, intrinsic scene decomposition can be facilitated using depth-based priors, which nowadays is easy to acquire with high-end smartphones by utilizing their depth sensors. In this work, we present a system for intrinsic decomposition of RGB-D images on smartphones and the algorithmic as well as design choices therein. Unlike state-of-the-art methods that assume only diffuse reflectance, we consider both diffuse and specular pixels. For this purpose, we present a novel specularity extraction algorithm based on a multi-scale intensity decomposition and chroma inpainting. At this, the diffuse component is further decomposed into albedo and shading components. We use an inertial proximal algorithm for non-convex optimization (iPiano) to ensure albedo sparsity. Our GPU-based visual processing is implemented on iOS via the Metal API and enables interactive performance on an iPhone 11 Pro. Further, a qualitative evaluation shows that we are able to obtain high-quality outputs. Furthermore, our proposed approach for specularity removal outperforms state-of-the-art approaches for real-world images, while our albedo and shading layer decomposition is faster than the prior work at a comparable output quality. Manifold applications such as recoloring, retexturing, relighting, appearance editing, and stylization are shown, each using the intrinsic layers obtained with our method and/or the corresponding depth data.
+</p>
+<!--
+<video width="100%" controls> <source src="./other/shekhar-vmv2019-final.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>  </video>
+-->
+
+<h1 >
+      Results
+</h1>
+<br>
+<br>
+
+	
+<div class="logos" >
+<div class="row" style="text-align:center">
+<b> Hover above the below input images to view the corresponding result. </b>
+</div>
+
+<div class="row">
+  <div class="column_33">
+    <img src="./results/material_edit/glass/input.jpg" 
+    onmouseover="this.src='./results/material_edit/glass/glass.jpg';" 
+    onmouseout="this.src='./results/material_edit/glass/input.jpg';" 
+    alt="Material Appearance Editing" style="width:85%">
+  </div>
+  <div class="column_33">
+    <img src="./results/atmospheric_edit/god_ray/input.jpg" 
+    onmouseover="this.src='./results/atmospheric_edit/god_ray/god_ray.jpg';" 
+    onmouseout="this.src='./results/atmospheric_edit/god_ray/input.jpg';" 
+    alt="Atmospheric Appearance Editing" style="width:85%"> 
+  </div>
+  <div class="column_33">
+    <img src="./results/stylization/all_edges/input.jpg" 
+    onmouseover="this.src='./results/stylization/all_edges/stylized.jpg';" 
+    onmouseout="this.src='./results/stylization/all_edges/input.jpg';" 
+    alt="Comic Stylization" style="width:85%"> 
+  </div>
+</div>
+
+<div class="row">
+  <div class="column_33" >
+      Material Appearance Editing
+  </div>
+  <div class="column_33">
+      Atmospheric Appearance Editing
+  </div>
+  <div class="column_33">
+     Image Stylization
+  </div>
+</div>
+
+</div> 
+
+<br>
+<br>
+
+
+<br/>
+
+
+<h1>Citation</h1>
+<p style = "padding:10.0px 20.0px 10.0px 20.0px;">
+	<i>Sumit Shekhar, Max Reimann, Maximilian Mayer, Amir Semmo, Sebastian Pasewaldt, Jürgen Döllner, Matthias Trapp</i><br/>
+	<b>Interactive Photo Editing on Smartphones via Intrinsic Decomposition</b><br/>
+	<i>Eurographics, 2021</i><br/>	
+	
+<div style = "padding: 0.0px 0.0px 0.0px 20.0px;">
+<pre><code>
+@article {SRMSPDT2021,
+author = {Shekhar, Sumit and Reimann, Max and Mayer, Maximilian and Semmo, Amir and Pasewaldt, Sebastian 
+          and D{\"o}llner, J{\"u}rgen and Trapp, Matthias},
+title  = {Interactive Photo Editing on Smartphones via Intrinsic Decomposition},
+year   = {2021},
+publisher = {The Eurographs Association \& John Wiley \& Sons, Ltd.},
+volume = {40},
+number = {2},
+journal   = {Computer Graphics Forum}
+}
+
+</code>
+</pre>
+</div>
+</p>
+<p style = "padding:0.0px 20.0px 10.0px 20.0px;">
+	<span style="font-size: 7pt;">&copy; 2021 The Authors. This is the author's version of the work. It is posted here for your personal use. Not for redistribution. </span>
+</p>
+
+
+<h1>Downloads</h1>
+<table>
+	<tr valign ="top">
+		<td>
+
+			<table class="downloads" style="width: 400px;padding: 20px 20px 0px 15px">
+				<tr style="">
+					<td><div style="width: 23px; height: 24px; background-image:url(./images/main/PDF.png);"/></td>
+					<td><a href="./other/ipesid_eg2021_main.pdf">Paper (73 MB)</a>
+					</a></td>
+				</tr>	
+<!--                 <tr style="">
+					<td><div style="width: 23px; height: 24px; background-image:url(./images/main/PDF.png);"/></td>
+					<td><a href="./other/ipesid_eg2021_main_compressed.pdf">Paper - Low Res. (3 MB)</a>
+					</a></td>
+				</tr>		 -->		
+				<tr style="">
+					<td><div style="width: 23px; height: 24px; background-image:url(./images/main/PDF.png);"/></td>
+					<td><a href="./other/ipesid_eg2021_sup.pdf">Supplementary material</a>
+					</a></td>
+				</tr>					
+			</table>
+		</td>
+		<td style="width:600px;">
+
+		</td>
+	</tr>
+</table>
+<br/>
+
+
+<h1>Acknowledgements</h1>
+<p style = "padding:10.0px 20.0px 10.0px 20.0px;">
+We thank the anonymous reviewers for their valuable feedback. We thank Mohammad Shafiei and Mahesh Chandra for valuable discussion w.r.t. optimization solver. We thank Florence Böttger for her help with the development of atmospheric editing pipeline. We thank Ariane Morassi Sasso, Harry Freitas da Cruz, Orhan Konak and Jessica Jall for patiently posing for the pictures. This work was funded by the German Federal Ministry of Education
+and Research (BMBF) (through grants 01IS15041 – “mdViProject” and 01IS19006 – “KI-Labor ITSE”) and the Research School on “Service-Oriented Systems Engineering” of the Hasso Plattner Institute.</p>
+
+<!--
+<div class="logos" class="clr" >
+	<span  ></span>
+    <a href="https://hpi.de/"><img src="./images/main/logos/hpi_logo.png" alt="Hasso-Plattner-Institut" /></a>
+	<a href="https://www.digitalmasterpieces.com/"><img src="./images/main/logos/dm_logo.png" alt="Digital Masterpieces" /></a>
+	<a href="https://www.bmbf.de/"><img src="./images/main/logos/bmbf_logo.png" alt="BMBF: Bundesministerium für Bildung und Forschung" /></a>
+	<a href="https://www.uni-potsdam.de/"><img src="./images/main/logos/uni_potsdam_logo.png" alt="Universität Potsdam" /></a>
+	<span class="clr"></span>
+</div> -->
+
+<div class="logos" >
+
+<div class="row">
+  <div class="column_25">
+    <a href="https://hpi.de/"><img src="./images/main/logos/hpi_logo.png" alt="Hasso-Plattner-Institut"></a>
+  </div>
+  <div class="column_25">
+    <a href="https://www.digitalmasterpieces.com/"><img src="./images/main/logos/dm_logo.png" alt="Digital Masterpieces" ></a>
+  </div>
+  <div class="column_25">
+    <a href="https://www.bmbf.de/"><img src="./images/main/logos/bmbf_logo.png" alt="BMBF: Bundesministerium für Bildung und Forschung" ></a>
+  </div>
+  <div class="column_25">
+    <a href="https://www.uni-potsdam.de/"><img src="./images/main/logos/uni_potsdam_logo.png" alt="Universität Potsdam" ></a>
+  </div>
+</div>
+
+</div> 
+
+<br />
+<br />
+	
+<div id="footer">Copyright 2021 by <a href="https://hpi.de/" title="Home Page of the Hasso-Plattner-Institut">Hasso-Plattner-Institut</a> | <a href="https://hpi.de/impressum.html" target="_blank">Imprint/Impressum</a> | <a href="https://hpi.de/datenschutz.html" target="_blank">Data Protection</a> <br/>
+</div>
+	
+	
+   </div>
+</div>
+
+</center>
+
+</body>
+</html>
