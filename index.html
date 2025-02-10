@@ -33,7 +33,7 @@
       <img src="thumbnail/humanLDM.png" alt="HumanLDM Teaser Image" class="img-fluid">
     </div>
     <div class="col-md-8 paper" onclick="window.location.href='https://ivpg.github.io/humanLDM/'">
-      <h3 onclick="window.location.href='https://ivpg.github.io/humanLDM/'">Controlling Human Shape and Pose in Text-to-Image Diffusion Models via Domain Adaptation</h3>
+      <h3 onclick="window.location.href='https://ivpg.github.io/humanLDM/'">Controlling Human Shape and Pose in Text-to-Image Diffusion Models via Domain Adaptation, WACV'25</h3>
       <p>Abstract: We present a methodology for conditional control of human shape and pose in pretrained text-to-image diffusion models using a 3D human parametric model (SMPL). 
         
         Fine-tuning these diffusion models to adhere to new conditions requires large datasets and high-quality annotations, which can be more cost-effectively acquired through synthetic data generation rather than real-world data. However, the domain gap and low scene diversity of synthetic data can compromise the pretrained model's visual fidelity. 
@@ -45,13 +45,26 @@
       <br>
     <br>
 
+        <!-- Paper 2 -->
+    <div class="col-md-4 paper" onclick="window.location.href='https://maxreimann.github.io/artistic-texture-editing/'">
+      <img src="thumbnail/artistic_editing.png" alt="Artistic Editing Teader" class="img-fluid">
+    </div>
+    <div class="col-md-8 paper" onclick="window.location.href='https://maxreimann.github.io/artistic-texture-editing/'">
+      <h3 onclick="window.location.href='https://maxreimann.github.io/artistic-texture-editing/'">Controlling Geometric Abstraction and Texture for Artistic Images, CW'23/TVJC'24</h3>
+      <p>Abstract: We present a novel method for the interactive control of geometric abstraction and texture in artistic images. Previous example-based stylization methods often entangle shape, texture, and color, while generative methods for image synthesis generally either make assumptions about the input image, such as only allowing faces, or do not offer precise editing controls By contrast, our holistic approach spatially decomposes the input into shapes and a parametric representation of high-frequency details comprising the image's texture, thus enabling independent control of color and texture. Each parameter in this representation controls painterly attributes of a pipeline of differentiable stylization filters. The proposed decoupling of shape and texture enables various options for stylistic editing, including interactive global and local adjustments of shape, stroke, and painterly attributes such as surface relief and contours. 
+        Additionally, we demonstrate optimization-based texture style-transfer in the parametric space using reference images and text prompts, as well as the training of single- and arbitrary style parameter prediction networks for real-time texture decomposition.
+    </div>
+
+
+      <br>
+    <br>
     
     <!-- Paper 1 -->
     <div class="col-md-4 paper" onclick="window.location.href='https://maxreimann.github.io/stream-consistency/'">
       <img src="thumbnail/vid_consistency.png" alt="Video Consistency Teaser Image" class="img-fluid">
     </div>
     <div class="col-md-8 paper" onclick="window.location.href='https://maxreimann.github.io/stream-consistency/'">
-      <h3 onclick="window.location.href='https://maxreimann.github.io/stream-consistency/'">Interactive Control over Temporal Consistency while Stylizing Video Streams</h3>
+      <h3 onclick="window.location.href='https://maxreimann.github.io/stream-consistency/'">Interactive Control over Temporal Consistency while Stylizing Video Streams, EGSR'23</h3>
       <p>Abstract: Image stylization has seen significant advancement and widespread interest over the years, leading to the development of amultitude of techniques. Extending these stylization techniques, such as Neural Style Transfer (NST), to videos is often achieved by applying them on a per-frame basis. 
         However, per-frame stylization usually lacks temporal consistency, expressed by un-desirable flickering artifacts. 
         Most of the existing approaches for enforcing temporal consistency suffer from one or more ofthe following drawbacks: They (1) are only suitable for a limited range of techniques, (2) do not support online processing as they require the complete video as input, (3) cannot provide consistency for the task of stylization, or (4) do not provide interactive consistency control. 
@@ -64,28 +77,13 @@
 
       <br>
     <br>
-
-    <!-- Paper 2 -->
-    <div class="col-md-4 paper" onclick="window.location.href='https://maxreimann.github.io/artistic-texture-editing/'">
-      <img src="thumbnail/artistic_editing.png" alt="Artistic Editing Teader" class="img-fluid">
-    </div>
-    <div class="col-md-8 paper" onclick="window.location.href='https://maxreimann.github.io/artistic-texture-editing/'">
-      <h3 onclick="window.location.href='https://maxreimann.github.io/artistic-texture-editing/'">Controlling Geometric Abstraction and Texture for Artistic Images</h3>
-      <p>Abstract: We present a novel method for the interactive control of geometric abstraction and texture in artistic images. Previous example-based stylization methods often entangle shape, texture, and color, while generative methods for image synthesis generally either make assumptions about the input image, such as only allowing faces, or do not offer precise editing controls By contrast, our holistic approach spatially decomposes the input into shapes and a parametric representation of high-frequency details comprising the image's texture, thus enabling independent control of color and texture. Each parameter in this representation controls painterly attributes of a pipeline of differentiable stylization filters. The proposed decoupling of shape and texture enables various options for stylistic editing, including interactive global and local adjustments of shape, stroke, and painterly attributes such as surface relief and contours. 
-        Additionally, we demonstrate optimization-based texture style-transfer in the parametric space using reference images and text prompts, as well as the training of single- and arbitrary style parameter prediction networks for real-time texture decomposition.
-    </div>
-
-
-      <br>
-    <br>
-    
     
       <!-- Paper 3 -->
     <div class="col-md-4 paper" onclick="window.location.href='wise'">
       <img src="thumbnail/wise.png" alt="Wise Teaser Image" class="img-fluid">
     </div>
     <div class="col-md-8 paper" onclick="window.location.href='wise'">
-      <h3 onclick="window.location.href='wise'">WISE: Whitebox Image Stylization by Example-based Learning</h3>
+      <h3 onclick="window.location.href='wise'">WISE: Whitebox Image Stylization by Example-based Learning, ECCV'22</h3>
       <p>Abstract: Image-based artistic rendering can synthesize a variety of expressive styles using algorithmic image filtering. In contrast to deep learning-based methods, these heuristics-based filtering techniques can operate on high-resolution images, are interpretable, and can be parameterized according to various design aspects. However, adapting or extending these techniques to produce new styles is often a tedious and error-prone task that requires expert knowledge.
 
         We propose a new paradigm to alleviate this problem: implementing algorithmic image filtering techniques as differentiable operations that can learn parametrizations aligned to certain reference styles. To this end, we present WISE, an example-based image-processing system that can handle a multitude of stylization techniques, such as watercolor, oil or cartoon stylization, within a common framework. By training parameter prediction networks for global and local filter parameterizations, we can simultaneously adapt effects to reference styles and image content, e.g., to enhance facial features.
@@ -101,20 +99,8 @@
       <img src="thumbnail/styletune.png" alt="Styletune Teaser Image" class="img-fluid">
     </div>
     <div class="col-md-8 paper" onclick="window.location.href='styletune'">
-      <h3 onclick="window.location.href='styletune'">Interactive Multi-level Stroke Control for Neural Style Transfer</h3>
+      <h3 onclick="window.location.href='styletune'">Interactive Multi-level Stroke Control for Neural Style Transfer, CW'21/TVJC'22</h3>
       <p>Abstract: We present StyleTune, a mobile app for interactive multi-level control of neural style transfers that facilitates creative adjustments of style elements and enables high output fidelity. In contrast to current mobile neural style transfer apps, StyleTune supports users to adjust both the size and orientation of style elements, such as brushstrokes and texture patches, on a global as well as local level. To this end, we propose a novel stroke-adaptive feed-forward style transfer network, that enables control over stroke size and intensity and allows a larger range of edits than current approaches. For additional level-of-control, we propose a network agnostic method for stroke-orientation adjustment by utilizing the rotation-variance of CNNs. To achieve high output fidelity, we further add a patch-based style transfer method that enables users to obtain output resolutions of more than 20 Megapixel. Our approach empowers users to create many novel results that are not possible with current mobile neural style transfer apps.</p>
-    </div>
-
-    <br>
-    <br>
-
-    <!-- Paper 5 -->
-    <div class="col-md-4 paper" onclick="window.location.href='cfvl'">
-      <img src="thumbnail/cfvl.png" alt="CFVL Teaser Image" class="img-fluid">
-    </div>
-    <div class="col-md-8 paper" onclick="window.location.href='cfvl'">
-      <h3 onclick="window.location.href='cfvl'">Consistent Filtering of Videos and Dense Light-Fields Without Optic-Flow</h3>
-      <p>Abstract: A convenient post-production video processing approach is to apply image filters on a per-frame basis. This allows the flexibility of extending image filters—originally designed for still images—to videos. However, per-image filtering may lead to temporal inconsistencies perceived as unpleasant flickering artifacts, which is also the case for dense light-fields due to angular inconsistencies. In this work, we present a method for consistent filtering of videos and dense light-fields that addresses these problems. Our assumption is that inconsistencies—due to per-image filtering—are represented as noise across the image sequence. We thus perform denoising across the filtered image sequence and combine per-image filtered results with their denoised versions. At this, we use saliency based optimization weights to produce a consistent output while preserving the details simultaneously. To control the degree-of-consistency in the final output, we implemented our approach in an interactive real-time processing framework. Unlike state-of-the-art inconsistency removal techniques, our approach does not rely on optic-flow for enforcing coherence. Comparisons and a qualitative evaluation indicate that our method provides better results over state-of-the-art approaches for certain types of filters and applications.</p>
     </div>
 
     <br>
@@ -125,7 +111,7 @@
       <img src="thumbnail/colier.png" alt="Colier Teaser Image" class="img-fluid">
     </div>
     <div class="col-md-8 paper" onclick="window.location.href='colier'">
-      <h3 onclick="window.location.href='colier'">COLiER: Collaborative Editing of Raster Images</h3>
+      <h3 onclick="window.location.href='colier'">COLiER: Collaborative Editing of Raster Images, CW'22</h3>
       <p>Abstract: Various web-based image-editing tools and web-based collaborative tools exist in isolation. Research focusing to bridge the gap between these two domains is sparse. We respond to the above and develop prototype groupware for real-time collaborative editing of raster images in a web browser. To better understand the requirements, we conduct a preliminary user study and establish communication and synchronization as key elements. The existing groupware for text documents, presentations, and vector graphics handles the above through well-established techniques. However, those cannot be extended as it is for raster graphics manipulation. To this end, we develop a document model that is maintained by a server and is delivered and synchronized to multiple clients. Our prototypical implementation is based on a scalable client-server architecture: using WebGL for interactive browser-based rendering and WebSocket connections to maintain synchronization. We evaluate our work qualitatively through a post-deployment user study for three different scenarios.</p>
     </div>
 
@@ -137,11 +123,22 @@
       <img src="thumbnail/ipesid.png" alt="Ipesid Teaser Image" class="img-fluid">
     </div>
     <div class="col-md-8 paper" onclick="window.location.href='ipesid'">
-      <h3 onclick="window.location.href='ipesid'">Interactive Photo Editing on Smartphones via Intrinsic Decomposition</h3>
+      <h3 onclick="window.location.href='ipesid'">Interactive Photo Editing on Smartphones via Intrinsic Decomposition, Eurographics'21</h3>
       <p>Abstract: Intrinsic decomposition refers to the problem of estimating scene characteristics, such as albedo and shading, when one view or multiple views of a scene are provided. The inverse problem setting, where multiple unknowns are solved given a single known pixel-value, is highly under-constrained. When provided with correlating image and depth data, intrinsic scene decomposition can be facilitated using depth-based priors, which nowadays is easy to acquire with high-end smartphones by utilizing their depth sensors. In this work, we present a system for intrinsic decomposition of RGB-D images on smartphones and the algorithmic as well as design choices therein. Unlike state-of-the-art methods that assume only diffuse reflectance, we consider both diffuse and specular pixels. For this purpose, we present a novel specularity extraction algorithm based on a multi-scale intensity decomposition and chroma inpainting. At this, the diffuse component is further decomposed into albedo and shading components. We use an inertial proximal algorithm for non-convex optimization (iPiano) to ensure albedo sparsity. Our GPU-based visual processing is implemented on iOS via the Metal API and enables interactive performance on an iPhone 11 Pro. Further, a qualitative evaluation shows that we are able to obtain high-quality outputs. Furthermore, our proposed approach for specularity removal outperforms state-of-the-art approaches for real-world images, while our albedo and shading layer decomposition is faster than the prior work at a comparable output quality. Manifold applications such as recoloring, retexturing, relighting, appearance editing, and stylization are shown, each using the intrinsic layers obtained with our method and/or the corresponding depth data.</p>
     </div>
 
         <br>
+    <br>
+        <!-- Paper 5 -->
+    <div class="col-md-4 paper" onclick="window.location.href='cfvl'">
+      <img src="thumbnail/cfvl.png" alt="CFVL Teaser Image" class="img-fluid">
+    </div>
+    <div class="col-md-8 paper" onclick="window.location.href='cfvl'">
+      <h3 onclick="window.location.href='cfvl'">Consistent Filtering of Videos and Dense Light-Fields Without Optic-Flow, VMV'19</h3>
+      <p>Abstract: A convenient post-production video processing approach is to apply image filters on a per-frame basis. This allows the flexibility of extending image filters—originally designed for still images—to videos. However, per-image filtering may lead to temporal inconsistencies perceived as unpleasant flickering artifacts, which is also the case for dense light-fields due to angular inconsistencies. In this work, we present a method for consistent filtering of videos and dense light-fields that addresses these problems. Our assumption is that inconsistencies—due to per-image filtering—are represented as noise across the image sequence. We thus perform denoising across the filtered image sequence and combine per-image filtered results with their denoised versions. At this, we use saliency based optimization weights to produce a consistent output while preserving the details simultaneously. To control the degree-of-consistency in the final output, we implemented our approach in an interactive real-time processing framework. Unlike state-of-the-art inconsistency removal techniques, our approach does not rely on optic-flow for enforcing coherence. Comparisons and a qualitative evaluation indicate that our method provides better results over state-of-the-art approaches for certain types of filters and applications.</p>
+    </div>
+
+    <br>
     <br>
     
     <div id="footer">Copyright 2024 by <a href="https://hpi.de/" title="Home Page of the Hasso-Plattner-Institut">Hasso-Plattner-Institut</a> | <a href="https://hpi.de/impressum.html" target="_blank">Imprint/Impressum</a> | <a href="https://hpi.de/datenschutz.html" target="_blank">Data Protection</a> <br/>
